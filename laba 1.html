@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>РОЗКЛАД НАВЧАЛЬНОЇ ГРУПИ</title>
+    <style>
+        /* Загальні стилі для сторінки */
+        body {
+		background-image: url("C:\\Users\\Admin\\Pictures\\ppp.jpg"); /* Замініть 'D:\\notepad\\image.jpg' на шлях до вашого фонового зображення */
+            background-size: cover; /* Щоб зображення розтягувалося і відображалося повністю */
+            background-repeat: no-repeat; /* Вимикаємо повторення фонового зображення */
+            background-attachment: fixed; /* Фіксуємо фонове зображення */
+			}
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f2f2f2;
+        }
+
+        /* Стилі для заголовка */
+        h1 {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* Стилі для контейнера з таблицею і формою */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        /* Стилі для таблиці розкладу */
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s; /* Додаємо анімацію зміни кольору фону і тексту */
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        /* Заливка рядків для виділення пар з різними предметами */
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+
+        /* Підсвічування рядків при наведенні курсора */
+        tr:hover {
+            background-color: #007BFF; /* Змінюємо фон на голубий колір при наведенні */
+            color: white; /* Змінюємо колір тексту на білий колір при наведенні */
+        }
+
+        /* Стилі для форми реєстрації */
+        .registration-form {
+            width: 20%;
+            text-align: center;
+        }
+
+        .registration-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .registration-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Стилі для зображення */
+        .image {
+            #logo {
+            margin-left: 120px;
+      margin-top: -120px;
+            max-width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Розклад навчальної групи</h1>
+
+    <div class="container">
+        <table>
+            <tr>
+                <th>День</th>
+                <th>Година</th>
+                <th>Предмет</th>
+            </tr>
+            <tr>
+            <td rowspan="4">Понеділок</td>
+            <td>8:30 - 10:05</td>
+            <td>Право</td>
+        </tr>
+        <tr>
+            <td>10:25 - 12:00</td>
+            <td>ЗВП</td>
+        </tr>
+		<tr>
+            <td>12:20 - 13:55</td>
+            <td>Програмування</td>
+        </tr>
+		<tr>
+            <td>16:10 - 17:45</td>
+            <td>СР</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Вівторок</td>
+            <td>8:30 - 10:05</td>
+            <td>ФВ</td>
+        </tr>
+        <tr>
+            <td>10:25 - 12:00</td>
+            <td>ТІК</td>
+        </tr>
+		<tr>
+            <td>12:20 - 13:55</td>
+            <td>ТС</td>
+        </tr>
+		<tr>
+            <td>16:10 - 17:45</td>
+            <td>СР</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Середа</td>
+            <td>8:30 - 10:05</td>
+            <td>ТІМ</td>
+        </tr>
+        <tr>
+            <td>10:25 - 12:00</td>
+            <td>ТІМ</td>
+        </tr>
+		<tr>
+            <td>12:20 - 13:55</td>
+            <td>Англійська</td>
+        </tr>
+		<tr>
+            <td>16:10 - 17:45</td>
+            <td>СР</td>
+        </tr>
+        <tr>
+            <td rowspan="4">Четвер</td>
+            <td>8:30 - 10:05</td>
+            <td>СР</td>
+        </tr>
+        <tr>
+            <td>10:25 - 12:00</td>
+            <td>Право</td>
+        </tr>
+		<tr>
+            <td>12:20 - 13:55</td>
+            <td>ФВ</td>
+        </tr>
+		<tr>
+            <td>16:10 - 17:45</td>
+            <td>Програмування</td>
+        </tr>
+        <tr>
+            <td rowspan="4">П'ятниця</td>
+            <td>8:30 - 10:05</td>
+            <td>ФВ</td>
+        </tr>
+        <tr>
+            <td>10:25 - 12:00</td>
+            <td>Теорія сигналів</td>
+        </tr>
+		<tr>
+            <td>12:20 - 13:55</td>
+            <td>СР</td>
+        </tr>
+		<tr>
+            <td>16:10 - 17:45</td>
+            <td>СР</td>
+        </tr>
+		<tr>
+            <td rowspan="4">Субота</td>
+            <td>8:30 - 10:05</td>
+            <td>ЗВП</td>
+        </tr>
+        <tr>
+            <td>10:25 - 12:00</td>
+            <td>ЗВП</td>
+        </tr>
+		<tr>
+            <td>12:20 - 13:55</td>
+            <td>СР</td>
+        </tr>
+        <tr>
+        </table>
+
+        <div class="registration-form">
+            <h2>Реєстрація</h2>
+            <form action="роздільник_реєстрації.php" method="POST">
+                <input type="text" name="ім'я" placeholder="Ім'я" required>
+                <input type="text" name="прізвище" placeholder="Прізвище" required>
+                <input type="email" name="електронна_пошта" placeholder="Електронна пошта" required>
+                <input type="password" name="пароль" placeholder="Пароль" required>
+                <input type="password" name="підтвердження_пароля" placeholder="Підтвердження пароля" required>
+                <button type="submit">Зареєструватися</button>
+            </form>
+            <!-- Зображення під формою реєстрації -->
+            <div id="logo">
+            <img src="C:\\Users\\Admin\\Pictures\\iszzi.png" alt="Логотип установи">
+        </div>
+		<nav>
+		<h2>ІСЗЗІ</h2>
+		<tr>ІСЗЗІ КПІ ім. Ігоря Сікорського має сучасну матеріально-технічну базу для організації якісного освітнього процесу і науково-технічної діяльності, до складу якої входить навчальний комплекс із сучасними спеціалізованими лабораторіями і комп'ютерними класами. Зокрема, створено навчальний ситуаційний центр з кібербезпеки, навчальні лабораторії з технічного захисту інформації та навчальний вузол зв'язку. Крім того, функціонує академія CISCO, в рамках якої слухачам надаються додаткові можливості набуття практичного досвіду з конфігурування та адміністрування мережевого обладнання з одержанням відповідних атестатів міжнародного зразка.</tr>
+    </nav>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
