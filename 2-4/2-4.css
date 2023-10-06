@@ -1,0 +1,132 @@
+body {
+    background-image: url("C:\\Users\\Admin\\Pictures\\ppp.jpg"); /* Замініть 'D:\\notepad\\image.jpg' на шлях до вашого фонового зображення */
+    background-size: cover; /* Щоб зображення розтягувалося і відображалося повністю */
+    background-repeat: no-repeat; /* Вимикаємо повторення фонового зображення */
+    background-attachment: fixed; /* Фіксуємо фонове зображення */
+    font-family: "Times New Roman", Times, serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.content {
+    padding: 20px;
+    background-color: #blue;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.content h2 {
+    color: #333;
+    font-size: 24px;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.content ul li {
+    margin-bottom: 10px;
+}
+
+.content ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.form {
+    padding: 10px;
+    background-color: #blue; /* Змініть колір фону на ваш смак */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form input[type="text"],
+.form input[type="email"] {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form button[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.table {
+    padding: 20px;
+    background-color: #blue; /* Змініть колір фону на ваш смак */
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.table th {
+    background-color: #333;
+    color: #fff;
+}
+
+.table tr:hover {
+    background-color:  #007BFF;
+}
+
