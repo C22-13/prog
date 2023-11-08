@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM і JavaScript</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #87CEFA;
+			border: 5px solid black;
+        }
+
+        .highlight {
+            background-color: yellow;
+        }
+
+        h1 {
+            text-align: center;
+            transition: color 0.3s; /* Анімація для кольору тексту */
+            cursor: pointer; /* Зміна форми курсора при наведенні */
+        }
+
+        .list li, #link {
+            transition: transform 0.3s, color 0.3s;
+            cursor: pointer;
+        }
+
+        .list li:hover, #link:hover {
+            transform: scale(1.2); /* Збільшення розміру */
+            color: red; /* Зміна кольору */
+        }
+    </style>
+</head>
+<body>
+    <div id="mainDiv">
+        <h1>Hello, World!</h1>
+        <p>This is a paragraph.</p>
+        <ul class="list">
+            <li>list-item 1</li> 
+            <li>list-item 2</li>
+            <li>list-item 3</li>
+        </ul>
+        <a href="#" id="link">Click me!</a>
+    </div>
+</body>
+</html>
