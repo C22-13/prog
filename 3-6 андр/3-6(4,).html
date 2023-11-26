@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Events</title>
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        p {
+            border: 2px solid #3498db; /* Border color for the paragraph */
+            padding: 10px;
+            font-size: 16px;
+            color: #2ecc71; /* Text color for the paragraph */
+        }
+    </style>
+</head>
+<body>
+
+<p>This is some text.</p>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var paragraph = document.querySelector('p');
+        paragraph.style.border = '2px solid #e74c3c'; /* Change border color after DOMContentLoaded */
+        paragraph.style.fontSize = '20px'; /* Change font size after DOMContentLoaded */
+        console.log('Документ повністю завантажено!');
+    });
+</script>
+
+</body>
+</html>

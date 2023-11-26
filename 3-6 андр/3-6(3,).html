@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Events</title>
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #focusInput {
+            padding: 8px;
+            border: 2px solid #3498db; /* Border color */
+        }
+
+        #focusButton {
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<input type="text" id="focusInput">
+<button id="focusButton">Focus Input</button>
+
+<script>
+    var focusInput = document.getElementById('focusInput');
+
+    focusInput.addEventListener('focus', function() {
+        focusInput.style.border = '2px solid #2ecc71'; /* Change border color on focus */
+        console.log('Елемент отримав фокус!');
+    });
+
+    focusInput.addEventListener('blur', function() {
+        focusInput.style.border = '2px solid #3498db'; /* Reset border color on blur */
+        console.log('Елемент втратив фокус!');
+    });
+</script>
+
+</body>
+</html>
+

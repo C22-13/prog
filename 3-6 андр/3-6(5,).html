@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Event Listeners</title>
+    <style>
+        /* Add your styles here */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #eventButton {
+            padding: 10px;
+            font-size: 16px;
+            color: #3498db; /* Font color for the button text */
+        }
+    </style>
+</head>
+<body>
+
+<button id="eventButton">Event Button</button>
+
+<script>
+    var eventButton = document.getElementById('eventButton');
+
+    eventButton.addEventListener('click', function() {
+        console.log('Подія виникла!');
+    });
+
+    eventButton.addEventListener('click', function() {
+        console.log('Це один обробник події!');
+    });
+</script>
+
+</body>
+</html>
+
